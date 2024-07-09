@@ -21,6 +21,7 @@ import EmailMe from "./layout/emailMe";
 import OrbitingCircles from "./ui/orbiting-circles";
 import { WorkExperience } from "./layout/workExperience";
 import { MdOutlineWorkspacePremium } from "react-icons/md";
+import { DirectionAwareHoverDemo } from "./layout/hoverImage";
 
 export function BentoGridSecondDemo() {
     return (
@@ -85,7 +86,7 @@ const items = [
         header: "",
         className: "md:row-span-2 md:row-start-3 md:p-0 hidden md:block",
         icon: "",
-        image: <Image src="/images/img1.jpeg" alt="Image2" width={150} height={150} className="max-h-[93%] rounded-xl max-w-full" />
+        image: <DirectionAwareHoverDemo />
     },
     {
         title: "",

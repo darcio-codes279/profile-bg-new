@@ -18,7 +18,6 @@ const EmailMe = () => {
             <HoverCard>
                 <HoverCardTrigger>
                     <Button onClick={copyEmail}><Mail /></Button>
-
                 </HoverCardTrigger>
                 <HoverCardContent>
                     <p className="text-center">Send me an e-mail</p>
