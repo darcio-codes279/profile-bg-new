@@ -22,6 +22,8 @@ import OrbitingCircles from "./ui/orbiting-circles";
 import { WorkExperience } from "./layout/workExperience";
 import { MdOutlineWorkspacePremium } from "react-icons/md";
 import { DirectionAwareHoverDemo } from "./layout/hoverImage";
+import AboutMe from "./layout/aboutMe";
+import { RxAvatar } from 'react-icons/rx'
 
 export function BentoGridSecondDemo() {
     return (
@@ -98,9 +100,9 @@ const items = [
     {
         title: "About Me",
         description: "",
-        header: "",
+        header: <AboutMe />,
         className: "md:col-span-2 md:row-span-2 md:col-start-5 md:row-start-3 md:block hidden",
-        icon: "",
+        icon: <RxAvatar size={28} />,
         // image: <BackgroundGradientAnimationDemo />,
     },
     {

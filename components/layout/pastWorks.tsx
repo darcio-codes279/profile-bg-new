@@ -2,8 +2,6 @@
 
 import { metadata } from '@/app/metadata';
 // Import Swiper React components
-
-import { CardTitle, CardDescription, Card } from "@/components/ui/card";
 import Image from 'next/image';
 import {
     Drawer,
@@ -16,6 +14,8 @@ import {
     DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Button } from "../ui/button";
+import Video from 'next-video';
+import torrinJoshuaVid from 'https://storage.googleapis.com/darcio-bentofolio/tpt1.mp4';
 
 const PastWorks = () => {
     return (
@@ -24,6 +24,18 @@ const PastWorks = () => {
             <DrawerContent>
                 <DrawerHeader>
                     <DrawerTitle>Are you absolutely sure?</DrawerTitle>
+                    <div className="flex items-center justify-center p-0">
+                        <Video src={torrinJoshuaVid}>
+                            {/* <Image
+                                slot="poster"
+                                src='https://storage.googleapis.com/darcio-bentofolio/torrinJoshua.png'
+                                alt="Past Clients"
+                                width={280}
+                                height={280}
+                            /> */}
+                        </Video>
+
+                    </div>
                     <DrawerDescription>This action cannot be undone.</DrawerDescription>
                 </DrawerHeader>
                 <DrawerFooter>
